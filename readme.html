@@ -1,0 +1,236 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"/>
+
+	<title>Consent Manager</title>
+	<meta name="description" content="Consent Manager">
+	<meta name="author" content="Consent Manager">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		  
+		body{
+			text-align:center;
+			line-height:1.5em;
+
+		}
+		
+		h3.us{
+		  font-size:30px;
+		  text-align:center;
+		  font-family: 'Quicksand', sans-serif;
+		}
+		
+		h2{
+			font-size:70px;
+			line-height:100px;
+			width:100px;
+			margin:20px auto 20px auto;
+			text-align:center;
+			background:black;
+			color:white;
+			border-radius:50px;
+		}
+		
+		h1{
+			font-family: 'Quicksand', sans-serif;
+		}
+		
+		#holder{
+			width:100%;
+			max-width:800px;
+			text-align:left;
+			margin: 10px auto;
+		}
+		
+		#holder h4{
+			border-top:1px solid #aaa;
+			margin-top:20px;
+			padding-top:10px;
+			font-family: 'Quicksand', sans-serif;
+			font-size: 18px;
+		}
+
+
+		#holder h6{
+			font-family: 'Quicksand', sans-serif;
+			font-size: 14px;
+		}
+		
+		li,p{
+			margin-bottom:1em;
+			font-family: 'Quicksand', sans-serif;
+			font-size: 16px;
+		}
+		
+		.coffee{
+			display:inline-block;
+			width:150px;
+			line-height:40px;
+			border:1px solid #aaa;
+			border-radius:5px;
+			padding:5px;
+			text-align:center;
+		}
+		
+		.coffee,
+		.coffee:hover,
+		.coffee:visited{
+			text-decoration:none;
+			color:black;
+		}
+		
+		.coffee:hover{
+			background:#6f4e37;
+			color:white;
+		}
+
+		pre code {
+		  background-color: #eee;
+		  border: 1px solid #999;
+		  display: block;
+		  padding: 20px;
+		}
+
+
+	</style>
+
+</head>
+
+<body>
+	<img src ="consentmanager_logo.jpg"/>
+	<h3 class="us">Consent Manager</h3>
+  
+	<hr/>
+	
+	<div id="holder">
+		<h1>Consent Manager v1.0.0</h1>
+		<h1>Zen Cart Versions :  1.5.0 -> 1.5.8</h1>
+
+
+
+
+			
+		
+		<h4><i class="fa fa-keyboard-o" aria-hidden="true"></i>&nbsp;&nbsp;Description</h4>
+			<p>This module allows sites to become GDPR & CCPA compliant with the Consent Manager Solution.<br/>Further details can be accesses at <a href="https://www.consentmanager.net/">https://www.consentmanager.net/</a>.<br/> It is recommended that you create an account at Consent Manager before installing this module. </p>
+		
+		<h4><i class="fa fa-arrow-right" aria-hidden="true"></i>&nbsp;&nbsp;Installation</h4>
+
+		<h6>Pre-installation preparation</h6>
+			<ol>
+				<li>Back up your database and your site</li>
+				<li>Unzip the package</li>
+				<li>Change the name of the 'YOUR_ADMIN' folder in the package to match the name of your admin folder. (Hint: The name of your admin folder is also the address of the admin login page). </li>
+				<li>Sign in to your zen cart admin.</li>
+			</ol>
+	
+		<h6>Uploading the files</h6>
+			<ol>
+				<li>Now that you have prepared the files they are ready for upload.</li>
+				<li>Sign in to your zen cart admin.</li>
+				<li>Upload the renamed "YOUR_ADMIN" folder and the "includes" folder to your server.</li>
+				<li>Refresh the page in zen cart admin and module will now be installed </li>
+				<li>If installation is successful you will see a confirmation message at the top of the page.</li>
+				<li>You will also be taken to the Consent Manager Installation Check page</li>
+			</ol>
+
+		<h6>Post-installation actions</h6>
+		<p>There is one further action that is required before the module can be used. A single line of code needs to be inserted into your template. Why? Because it is necessary to get the Consent Manager code to load first. The code insertion is automated in most cases but if your template is unusual you will have to do the code insertion manually. It is not difficult.</p>
+
+
+			<ol>
+				<li>You should be on the Consent Manager Installation Check page <br/>(if not then navigate there: admin->tools->Consent Manager)</li>
+				<li>In the first block you will see if the extra code has been inserted into your website.</li>
+				<li>If there is a cross in this block it means that the code must still be inserted.</li>
+				<li>If you see an option to 'Insert the Code' then the code can be inserted automatically. </li>
+				<li>If you do not see an option to insert the code, then you will need to insert the code manually. Please read the instructions below.</li>
+				<li>Now you should see a Green check mark in the first block.<br/>
+					You will also see an option to rollback the changes if there have been any problems with the automatic insert.</li>
+				<li>You should also see a Green check mark in the second block. If not then re-upload the module file.</li>
+				<li>Finally, you should see a Dark Green check mark in the third block and the installation is complete! All you need to do now is adjust the settings.</li>
+			</ol>
+
+		<h4><i class="fa fa-tachometer" aria-hidden="true"></i>&nbsp;&nbsp;Use</h4>
+			<p>The module has four settings</p>
+			<ul>
+				<li><b>Enable Consent Manager:</b> this either enables or disables the module</li>
+				<li><b>Blocking Mode:</b> Either automatic or semiautomatic : please see the Consent Manager website for further details.</li>
+				<li><b>Enter CMP-ID:</b> This is the CPM-ID that can be obtained from your Consent Manager account.</li>
+				<li><b>Additional HTML:</b> allows additional HTML that Consent Manager may provide to be added.<br/>Tip: if the value here changes when you save it that is due to the fact that it is being encoded for secure storage in the database. There is nothing to worry about.</li>
+
+			</ul>
+
+
+		<h4><i class="fa fa-file-code-o" aria-hidden="true"></i>&nbsp;&nbsp;File list</h4>
+			<p>There are no core file overwrites in this module.</p>
+			<p>Files included in this module:</p>
+			<ul>
+            <li>YOUR_ADMIN/includes/auto_loaders/config.consent_manager.php</li>
+            <li>YOUR_ADMIN/includes/extra_datafiles/consent_manager.php</li>
+            <li>YOUR_ADMIN/includes/functions/extra_functions/consent_manager.php</li>
+            <li>YOUR_ADMIN/includes/init_includes/init_consent_manager.php</li>
+            <li>YOUR_ADMIN/includes/languages/english/extra_definitions/consent_manager.php</li>
+            <li>YOUR_ADMIN/includes/languages/english/consent_manager.php</li>
+            <li>YOUR_ADMIN/consent_manager.php</li>
+            <li>includes/modules/consent_manager.php</li>
+
+			</ul>	
+
+
+		
+		<h4><i class="fa fa-arrow-left" aria-hidden="true"></i>&nbsp;&nbsp;Uninstallation</h4>
+			<p>If you wish to uninstall the module:</p>
+			<ul>
+				<li>Back up your database and your site.</li>
+				<li>Navigate to the Consent Manager Installation Check page <br/>(admin->tools->Consent Manager)</li>
+				<li>Click on Uninstall at the bottom of the page.</li>
+				<li>You will need to remove the alterations that have been made to your template manually.<br/>To do this edit includes/YOUR_TEMPLATE/common/html_header and remove the line below:<br/>
+					Tip: you will need to change YOUR_TEMPLATE to the name of your template to find the file. <br/> 
+				If you are in any doubt seek help on the forum.</li>
+
+			</ul>		
+
+			<pre class="code"><code>include(DIR_WS_MODULES . zen_get_module_directory('consentManager.php'));</code></pre>
+
+
+		<h4><i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp;&nbsp;Insert Code into Your template</h4>
+
+			<p>In rare cases, the automatic code insertion will not be able to insert the correct code into your template.<br/>
+			This will mean that you need to edit a file in your template.</p>
+
+			<p>The only change that is made to includes/YOUR_TEMPLATE/common/html_header is that one line is inserted. </p>
+
+			<pre class="code"><code>&lt;?phpinclude(DIR_WS_MODULES . zen_get_module_directory('consentManager.php'));?&gt;</code></pre>
+
+			<p>The aim is to insert this as high up the file as is practical. Look for a line that is something like this, perhaps </p>
+
+			<pre class="code"><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"/></code></pre>
+
+			<p>And put it directly below that so it looks like this.</p>
+
+			<pre class="code"><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"/><br/>&lt;?php include(DIR_WS_MODULES . zen_get_module_directory('consentManager.php'));?&gt;</code></pre>
+
+			<p>It is difficut to be specific because the reason we are having to do this is that your template is unusual.<br/>The best advice is probably from the template developer or the template thread on the Zen Cart forum.
+			</p>	
+	</div>
+	
+	<hr/>
+	<br/>
+	<br/>
+ 
+
+
+
+</body>
+</html>
